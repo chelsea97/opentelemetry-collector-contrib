@@ -230,7 +230,6 @@ require (
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/felixge/httpsnoop v1.0.2 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
-	github.com/fsolleza/opentelemetry-collector-contrib/exporter/stdoutexporter v0.0.0-20220412162147-e9c65b2e6572 // indirect
 	github.com/getsentry/sentry-go v0.13.0 // indirect
 	github.com/go-kit/kit v0.11.0 // indirect
 	github.com/go-kit/log v0.2.0 // indirect
@@ -340,6 +339,7 @@ require (
 	github.com/newrelic/newrelic-telemetry-sdk-go v0.8.1 // indirect
 	github.com/observiq/ctimefmt v1.0.0 // indirect
 	github.com/olivere/elastic v6.2.37+incompatible // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/stdoutexporter v0.0.0-00010101000000-000000000000 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer v0.48.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil v0.48.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight v0.48.0 // indirect
@@ -791,6 +791,8 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/windo
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver => ./receiver/zipkinreceiver
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zookeeperreceiver => ./receiver/zookeeperreceiver
+
+replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/stdoutexporter => ./exporter/stdoutexporter
 
 // see https://github.com/google/gnostic/issues/262
 replace github.com/googleapis/gnostic v0.5.6 => github.com/googleapis/gnostic v0.5.5

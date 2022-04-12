@@ -707,6 +707,8 @@ github.com/fsnotify/fsnotify v1.5.1 h1:mZcQUHVQUQWoPXXtuf9yuEXKudkV2sx1E06UadKWp
 github.com/fsnotify/fsnotify v1.5.1/go.mod h1:T3375wBYaZdLLcVNkcVbzGHY7f1l/uK5T5Ai1i3InKU=
 github.com/fsolleza/opentelemetry-collector-contrib/exporter/stdoutexporter v0.0.0-20220412162147-e9c65b2e6572 h1:iJStOJ7+StF9CHFggd+4ru/Vmthv6c2FFLOzbS25YpM=
 github.com/fsolleza/opentelemetry-collector-contrib/exporter/stdoutexporter v0.0.0-20220412162147-e9c65b2e6572/go.mod h1:WlR6JdXm5Vdgenpt4YO7A/LSMzemdgIILeGqdt+S7pw=
+github.com/fsolleza/stdoutexporter v0.0.0-20220412163044-73f61a1f6a8b h1:FhbM614fwgIw6CaKvojNnF7Ti0E7KXhUNGBDNIPisV4=
+github.com/fsolleza/stdoutexporter v0.0.0-20220412163044-73f61a1f6a8b/go.mod h1:FA21+JG8JboKAHlVY3nKLytIdq3WCS4/fwJrvD9D0Wg=
 github.com/fullsailor/pkcs7 v0.0.0-20190404230743-d7302db945fa/go.mod h1:KnogPXtdwXqoenmZCw6S+25EAm2MkxbG0deNDu4cbSA=
 github.com/garyburd/redigo v0.0.0-20150301180006-535138d7bcd7/go.mod h1:NR3MbYisc3/PwhQ00EMzDiPmrwpPxAn5GI05/YaO1SY=
 github.com/garyburd/redigo v1.6.3/go.mod h1:rTb6epsqigu3kYKBnaF028A7Tf/Aw5s0cqA47doKKqw=

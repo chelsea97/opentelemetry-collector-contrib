@@ -21,6 +21,7 @@ module-sets:
       - github.com/open-telemetry/opentelemetry-collector-contrib/cmd/mdatagen
       - github.com/open-telemetry/opentelemetry-collector-contrib/examples/demo/client
       - github.com/open-telemetry/opentelemetry-collector-contrib/examples/demo/server
+      - github.com/fsolleza/stdoutexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/alibabacloudlogserviceexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awscloudwatchlogsexporter
       - github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter

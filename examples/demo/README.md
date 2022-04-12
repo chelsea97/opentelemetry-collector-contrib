@@ -41,13 +41,30 @@ the `examples/demo` folder.
 
 ### Using a Locally Built Image
 Developers interested in running a local build of the Collector need to build a
-docker image using the command below:
+docker image using the command below from the root directory
 
 ```shell
-make docker-otelcol
+make docker-otelcontribcol
 ```
 
-And set an environment variable `OTELCOL_IMG` to `otelcol:latest` before 
+And set an environment variable `OTELCOL_IMG` to `otelcontribcol:latest` before 
 launching the command `docker-compose up -d`.
+
+
+### Some dev notes:
+
+Build binary from root repo dir:
+
+```
+cd root/directory
+make otelcontribcol # builds otelcontribcol for each arch
+bin/otelcontribcol_darwin_amd64 --config examples/demo/otel-collector-config.yaml # run otel-collector
+```
+
+Run demo to use otel collector running on localhost hitting minimal otel collector on localhost
+**note**: docker compose was modified to use minimal otel collector
+```
+docker compose up -d
+```
 
 

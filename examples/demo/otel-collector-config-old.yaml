@@ -4,6 +4,22 @@ receivers:
       grpc:
 
 exporters:
+  prometheus:
+    endpoint: "0.0.0.0:8889"
+    const_labels:
+      label1: value1
+
+  logging:
+
+  zipkin:
+    endpoint: "http://zipkin-all-in-one:9411/api/v2/spans"
+    format: proto
+
+  jaeger:
+    endpoint: jaeger-all-in-one:14250
+    tls:
+      insecure: true
+
   file:
     path: ./out.json
 
@@ -23,8 +39,8 @@ service:
     traces:
       receivers: [otlp]
       processors: [batch]
-      exporters: [file]
+      exporters: [logging, zipkin, jaeger, file]
     metrics:
       receivers: [otlp]
       processors: [batch]
-      exporters: [file]
+      exporters: [logging, prometheus]

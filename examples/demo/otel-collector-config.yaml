@@ -26,8 +26,8 @@ service:
     traces:
       receivers: [otlp]
       processors: [batch]
-      exporters: [file]
+      exporters: [mach]
     metrics:
       receivers: [otlp]
       processors: [batch]
-      exporters: [mach]
+      exporters: [file]

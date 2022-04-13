@@ -705,6 +705,8 @@ github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMo
 github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4IgpuI1SZQ=
 github.com/fsnotify/fsnotify v1.5.1 h1:mZcQUHVQUQWoPXXtuf9yuEXKudkV2sx1E06UadKWpgI=
 github.com/fsnotify/fsnotify v1.5.1/go.mod h1:T3375wBYaZdLLcVNkcVbzGHY7f1l/uK5T5Ai1i3InKU=
+github.com/fsolleza/mach-proto/golang v0.0.0-20220413142132-4810444a3aac h1:/HDmU+rLqda9vM2l7KP5lbs6tiHOAkTO/BZel+OCuow=
+github.com/fsolleza/mach-proto/golang v0.0.0-20220413142132-4810444a3aac/go.mod h1:O5Zp4yYFUJMPnjecpip0J93XWHfLMrV0jf9bEU4x+HI=
 github.com/fsolleza/opentelemetry-collector-contrib/exporter/stdoutexporter v0.0.0-20220412162147-e9c65b2e6572 h1:iJStOJ7+StF9CHFggd+4ru/Vmthv6c2FFLOzbS25YpM=
 github.com/fsolleza/opentelemetry-collector-contrib/exporter/stdoutexporter v0.0.0-20220412162147-e9c65b2e6572/go.mod h1:WlR6JdXm5Vdgenpt4YO7A/LSMzemdgIILeGqdt+S7pw=
 github.com/fsolleza/stdoutexporter v0.0.0-20220412163044-73f61a1f6a8b h1:FhbM614fwgIw6CaKvojNnF7Ti0E7KXhUNGBDNIPisV4=

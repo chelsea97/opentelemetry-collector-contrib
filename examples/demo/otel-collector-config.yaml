@@ -7,7 +7,7 @@ exporters:
   file:
     path: ./out.json
 
-  stdout:
+  mach:
 
 
 processors:
@@ -26,8 +26,8 @@ service:
     traces:
       receivers: [otlp]
       processors: [batch]
-      exporters: [file, stdout]
+      exporters: [file]
     metrics:
       receivers: [otlp]
       processors: [batch]
-      exporters: [file, stdout]
+      exporters: [mach]

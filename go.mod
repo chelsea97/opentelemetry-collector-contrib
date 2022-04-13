@@ -339,6 +339,7 @@ require (
 	github.com/newrelic/newrelic-telemetry-sdk-go v0.8.1 // indirect
 	github.com/observiq/ctimefmt v1.0.0 // indirect
 	github.com/olivere/elastic v6.2.37+incompatible // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/machexporter v0.0.0-00010101000000-000000000000 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/stdoutexporter v0.0.0-00010101000000-000000000000 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer v0.48.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil v0.48.0 // indirect
@@ -440,6 +441,7 @@ require (
 	go.mongodb.org/atlas v0.15.0 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.opentelemetry.io/collector/model v0.48.0 // indirect
+	go.opentelemetry.io/collector/pdata v0.0.0-20220412235344-7d2df7b067fe // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.31.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.31.0 // indirect
 	go.opentelemetry.io/contrib/zpages v0.31.0 // indirect
@@ -793,6 +795,8 @@ replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipki
 replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zookeeperreceiver => ./receiver/zookeeperreceiver
 
 replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/stdoutexporter => ./exporter/stdoutexporter
+
+replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/machexporter => ./exporter/machexporter
 
 // see https://github.com/google/gnostic/issues/262
 replace github.com/googleapis/gnostic v0.5.6 => github.com/googleapis/gnostic v0.5.5

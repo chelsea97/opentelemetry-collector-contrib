@@ -58,7 +58,7 @@ Build binary from root repo dir:
 ```
 cd root/directory
 make otelcontribcol # builds otelcontribcol for each arch
-bin/otelcontribcol_darwin_amd64 --config examples/demo/otel-collector-config.yaml # run otel-collector
+bin/otelcontribcol_<your-arch> --config examples/demo/otel-collector-config.yaml # run otel-collector
 ```
 
 Run demo to use otel collector running on localhost hitting minimal otel collector on localhost

@@ -6,6 +6,7 @@ import (
 	pb "github.com/fsolleza/mach-proto/golang"
 )
 
+// https://github.com/open-telemetry/opentelemetry-collector/blob/7d2df7b067fed4cd366c4f7502f218b4a4d4a723/pdata/internal/generated_ptrace.go
 func handle_traces(td pdata.Traces) {
 	fmt.Println("TRACE: *****")
 	resource_spans_slice := td.ResourceSpans()

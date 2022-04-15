@@ -8,6 +8,18 @@ exporters:
   stdout:
   logging:
 
+  kafka/metrics:
+    brokers:
+      - localhost:9093
+    topic: "oltp_metrics"
+    protocol_version: 2.0.0
+
+  kafka/traces:
+    brokers:
+      - localhost:9093
+    topic: "oltp_traces"
+    protocol_version: 2.0.0
+
 
 processors:
   batch:
@@ -25,8 +37,8 @@ service:
     traces:
       receivers: [otlp]
       processors: [batch]
-      exporters: [mach]
+      exporters: [logging, mach, kafka/traces]
     metrics:
       receivers: [otlp]
       processors: [batch]
-      exporters: [mach]
+      exporters: [logging, mach, kafka/metrics]

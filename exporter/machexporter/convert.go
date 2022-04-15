@@ -11,25 +11,40 @@ func handle_traces(td pdata.Traces) {
 	fmt.Println("TRACE: *****")
 	resource_spans_slice := td.ResourceSpans()
 	resource_spans := resource_spans_slice.At(0)
+	resource := resource_spans.Resource().Attributes().AsRaw()
 	scope_spans_slice := resource_spans.ScopeSpans()
 	scope_spans := scope_spans_slice.At(0)
+	scope := scope_spans.Scope().Name()
 	span_slice := scope_spans.Spans()
 	span := span_slice.At(0)
 
-	trace_id := span.TraceID()
-	span_id := span.SpanID()
-	parent_span := span.ParentSpanID()
+	trace_id := span.TraceID().HexString()
+	span_id := span.SpanID().HexString()
+	parent_span := span.ParentSpanID().HexString()
 	name := span.Name()
 	start_time := span.StartTimestamp()
 	end_time := span.EndTimestamp()
+	duration := float64(end_time - start_time)
 	attribs := span.Attributes().AsRaw()
+	attribs["scope_name"] = scope
+	attribs["span_name"] = name
+	for k, v := range resource {
+		attribs[k] = v
+	}
 	fmt.Println("TraceID", trace_id)
 	fmt.Println("SpanId", span_id)
 	fmt.Println("Parent Span", parent_span)
-	fmt.Println("Name", name)
 	fmt.Println("Start Time", start_time)
 	fmt.Println("End Time", end_time)
 	fmt.Println("Attrib", attribs)
+
+	var values []*pb.Value;
+	values = append(values, &pb.Value { PbType: &pb.Value_Str { Str: trace_id } })
+	values = append(values, &pb.Value { PbType: &pb.Value_Str { Str: span_id } })
+	values = append(values, &pb.Value { PbType: &pb.Value_Str { Str: parent_span } })
+	values = append(values, &pb.Value { PbType: &pb.Value_F64 { F64: duration } })
+	fmt.Println(values)
+	
 }
 
 func handle_sum(metric pdata.Metric) {

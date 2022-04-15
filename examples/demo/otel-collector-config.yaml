@@ -4,10 +4,9 @@ receivers:
       grpc:
 
 exporters:
-  file:
-    path: ./out.json
-
   mach:
+  stdout:
+  logging:
 
 
 processors:
@@ -30,4 +29,4 @@ service:
     metrics:
       receivers: [otlp]
       processors: [batch]
-      exporters: [file]
+      exporters: [mach]
